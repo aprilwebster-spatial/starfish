@@ -1,4 +1,5 @@
 coverage
-nbencdec
 flake8
+jsonpath-rw
+nbencdec
 -r REQUIREMENTS.txt

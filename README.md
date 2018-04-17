@@ -37,6 +37,8 @@ starfish detect_spots /tmp/starfish/filtered/experiment.json /tmp/starfish/resul
 
 starfish segment /tmp/starfish/filtered/experiment.json /tmp/starfish/results stain --dt .16 --st .22 --md 57
 
+starfish gene_assignment --coordinates-geojson /tmp/starfish/results/regions.geojson --spots-json /tmp/starfish/results/spots.json --output /tmp/starfish/results/regions.json deep_assigner
+
 starfish decode /tmp/starfish/results --decoder_type iss
 ```
 
